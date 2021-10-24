@@ -212,13 +212,13 @@ hi! link CursorColumn CursorLine
 hi! link CursorLineNr DraculaYellow
 hi! link DiffAdd      DraculaGreen
 hi! link DiffAdded    DiffAdd
-hi! link DiffChange   DraculaDiffChange
-hi! link DiffDelete   DraculaDiffDelete
+hi! link DiffChange   DraculaOrange
+hi! link DiffDelete   DraculaRed
 hi! link DiffRemoved  DiffDelete
 hi! link DiffText     DraculaDiffText
 hi! link Directory    Normal
 hi! link ErrorMsg     DraculaRedInverse
-hi! link FoldColumn   DraculaBoundary
+hi! link FoldColumn   DraculaFg
 hi! link Folded       DraculaComment
 hi! link IncSearch    DraculaSearch
 hi! link LineNr       DraculaComment
