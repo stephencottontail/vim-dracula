@@ -183,8 +183,8 @@ call s:h('DraculaWarnLine', s:none, s:none, [s:attrs.undercurl], s:orange)
 call s:h('DraculaInfoLine', s:none, s:none, [s:attrs.undercurl], s:cyan)
 
 call s:h('DraculaTodo', s:cyan, s:none, [s:attrs.bold, s:attrs.inverse])
-call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
-call s:h('DraculaBoundary', s:comment, s:bgdark)
+call s:h('DraculaSearch', s:none, s:bglighter)
+call s:h('DraculaBoundary', s:subtle, s:bg)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
 call s:h('DraculaDiffChange', s:orange, s:none)
@@ -216,12 +216,12 @@ hi! link DiffChange   DraculaDiffChange
 hi! link DiffDelete   DraculaDiffDelete
 hi! link DiffRemoved  DiffDelete
 hi! link DiffText     DraculaDiffText
-hi! link Directory    DraculaPurpleBold
+hi! link Directory    Normal
 hi! link ErrorMsg     DraculaRedInverse
-hi! link FoldColumn   DraculaSubtle
-hi! link Folded       DraculaBoundary
-hi! link IncSearch    DraculaOrangeInverse
-call s:h('LineNr', s:comment)
+hi! link FoldColumn   DraculaBoundary
+hi! link Folded       DraculaComment
+hi! link IncSearch    DraculaSearch
+hi! link LineNr       DraculaComment
 hi! link MoreMsg      DraculaFgBold
 hi! link NonText      DraculaSubtle
 hi! link Pmenu        DraculaBgDark
@@ -230,13 +230,13 @@ hi! link PmenuSel     DraculaSelection
 hi! link PmenuThumb   DraculaSelection
 hi! link Question     DraculaFgBold
 hi! link Search       DraculaSearch
-call s:h('SignColumn', s:comment)
-hi! link TabLine      DraculaBoundary
-hi! link TabLineFill  DraculaBgDark
+hi! link SignColumn   DraculaComment
+hi! link TabLine      DraculaBgLight
+hi! link TabLineFill  DraculaBgLight
 hi! link TabLineSel   Normal
-hi! link Title        DraculaGreenBold
+hi! link Title        DraculaBgLight
 hi! link VertSplit    DraculaBoundary
-hi! link Visual       DraculaSelection
+hi! link Visual       DraculaOrangeInverse
 hi! link VisualNOS    Visual
 hi! link WarningMsg   DraculaOrangeInverse
 
