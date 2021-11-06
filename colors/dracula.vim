@@ -150,31 +150,10 @@ call s:h('DraculaSelection', s:none, s:selection)
 call s:h('DraculaSubtle', s:subtle)
 
 call s:h('DraculaCyan', s:cyan)
-call s:h('DraculaCyanItalic', s:cyan, s:none, [s:attrs.italic])
-
 call s:h('DraculaGreen', s:green)
-call s:h('DraculaGreenBold', s:green, s:none, [s:attrs.bold])
-call s:h('DraculaGreenItalic', s:green, s:none, [s:attrs.italic])
-call s:h('DraculaGreenItalicUnderline', s:green, s:none, [s:attrs.italic, s:attrs.underline])
-
-call s:h('DraculaOrange', s:orange)
-call s:h('DraculaOrangeBold', s:orange, s:none, [s:attrs.bold])
-call s:h('DraculaOrangeItalic', s:orange, s:none, [s:attrs.italic])
-call s:h('DraculaOrangeBoldItalic', s:orange, s:none, [s:attrs.bold, s:attrs.italic])
-call s:h('DraculaOrangeInverse', s:bg, s:orange)
-
-call s:h('DraculaPink', s:pink)
-call s:h('DraculaPinkItalic', s:pink, s:none, [s:attrs.italic])
-
 call s:h('DraculaPurple', s:purple)
-call s:h('DraculaPurpleBold', s:purple, s:none, [s:attrs.bold])
-call s:h('DraculaPurpleItalic', s:purple, s:none, [s:attrs.italic])
-
 call s:h('DraculaRed', s:red)
-call s:h('DraculaRedInverse', s:fg, s:red)
-
-call s:h('DraculaYellow', s:yellow)
-call s:h('DraculaYellowItalic', s:yellow, s:none, [s:attrs.italic])
+call s:h('DraculaOrange', s:orange)
 
 call s:h('DraculaError', s:red, s:none, [], s:red)
 
@@ -276,39 +255,37 @@ hi! link SpellCap DraculaInfoLine
 hi! link SpellRare DraculaInfoLine
 
 hi! link Constant DraculaPurple
-hi! link String DraculaYellow
-hi! link Character DraculaPink
+hi! link String DraculaGreen
+hi! link Character Constant
 hi! link Number Constant
 hi! link Boolean Constant
 hi! link Float Constant
 
-hi! link Identifier DraculaFg
-hi! link Function DraculaGreen
+hi! link Identifier DraculaCyan
+hi! link Function DraculaCyan
 
-hi! link Statement DraculaPink
-hi! link Conditional DraculaPink
-hi! link Repeat DraculaPink
-hi! link Label DraculaPink
-hi! link Operator DraculaPink
-hi! link Keyword DraculaPink
-hi! link Exception DraculaPink
+hi! link Statement DraculaFg
+hi! link Conditional DraculaFg
+hi! link Repeat DraculaFg
+hi! link Label DraculaFg
+hi! link Operator DraculaFg
+hi! link Keyword DraculaFg
+hi! link Exception DraculaFg
 
-hi! link PreProc DraculaPink
-hi! link Include DraculaPink
-hi! link Define DraculaPink
-hi! link Macro DraculaPink
-hi! link PreCondit DraculaPink
-hi! link StorageClass DraculaPink
-hi! link Structure DraculaPink
-hi! link Typedef DraculaPink
+hi! link PreProc DraculaFg
+hi! link Include DraculaFg
+hi! link Define DraculaFg
+hi! link Macro DraculaFg
+hi! link PreCondit DraculaFg
+hi! link Type DraculaFg
+hi! link StorageClass DraculaFg
+hi! link Structure DraculaFg
+hi! link Typedef DraculaFg
 
-hi! link Type DraculaCyanItalic
-
+hi! link Special DraculaPurple
+hi! link SpecialComment DraculaComment
+hi! link Tag DraculaFg
 hi! link Delimiter DraculaFg
-
-hi! link Special DraculaPink
-hi! link SpecialComment DraculaCyanItalic
-hi! link Tag DraculaCyan
 hi! link helpHyperTextJump DraculaLink
 hi! link helpCommand DraculaPurple
 hi! link helpExample DraculaGreen
