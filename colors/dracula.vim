@@ -159,6 +159,7 @@ call s:h('DraculaSelection', s:none, s:selection)
 call s:h('DraculaSubtle', s:subtle)
 
 call s:h('DraculaCyan', s:cyan)
+call s:h('DraculaBgCyan', s:bg, s:cyan)
 call s:h('DraculaGreen', s:green)
 call s:h('DraculaPurple', s:purple)
 call s:h('DraculaRed', s:red)
@@ -212,6 +213,7 @@ hi! link IncSearch    DraculaSearch
 hi! link LineNr       DraculaComment
 hi! link MoreMsg      DraculaFgBold
 hi! link NonText      DraculaSubtle
+hi! link netrwMarkFile DraculaSearch
 hi! link Pmenu        DraculaBgDark
 hi! link PmenuSbar    DraculaBgDark
 hi! link PmenuSel     DraculaSelection
@@ -221,8 +223,8 @@ hi! link Search       DraculaSearch
 hi! link SignColumn   DraculaComment
 hi! link TabLine      DraculaBgLight
 hi! link TabLineFill  DraculaBgLight
-hi! link TabLineSel   Normal
-hi! link Title        DraculaBgLight
+hi! link TabLineSel   DraculaCyan
+hi! link Title        Normal
 hi! link VertSplit    DraculaBoundary
 hi! link Visual       DraculaOrangeInverse
 hi! link VisualNOS    Visual
