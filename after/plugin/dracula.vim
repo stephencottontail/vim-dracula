@@ -67,6 +67,15 @@ endif
 " those highlight groups when the defaults do not match the dracula
 " specification.
 " https://github.com/nvim-treesitter/nvim-treesitter/blob/master/plugin/nvim-treesitter.vim
+if exists('g:loaded_nvim_treesitter')
+	hi! link TSProperty DraculaFg
+	hi! link TSMethod DraculaCyan
+	hi! link TSConstructor DraculaCyan
+	hi! link TSTag DraculaCyan
+	hi! link TSFuncBuiltIn DraculaFg
+	hi! link jsxTagName DraculaCyan
+	hi! link phpTSConstructor DraculaFg
+endif
 function! s:test()
 	if exists('g:loaded_nvim_treesitter')
 		" # Misc
