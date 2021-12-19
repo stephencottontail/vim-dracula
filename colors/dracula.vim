@@ -32,24 +32,33 @@ endif
 " Palette: {{{2
 
 let s:fg        = g:dracula#palette.fg
+let s:bg        = g:dracula#palette.bg
 
 let s:bglighter = g:dracula#palette.bglighter
 let s:bglight   = g:dracula#palette.bglight
-let s:bg        = g:dracula#palette.bg
 let s:bgdark    = g:dracula#palette.bgdark
 let s:bgdarker  = g:dracula#palette.bgdarker
-
 let s:comment   = g:dracula#palette.comment
 let s:selection = g:dracula#palette.selection
 let s:subtle    = g:dracula#palette.subtle
-
-let s:cyan      = g:dracula#palette.cyan
-let s:green     = g:dracula#palette.green
 let s:orange    = g:dracula#palette.orange
-let s:pink      = g:dracula#palette.pink
-let s:purple    = g:dracula#palette.purple
+
+let s:black     = g:dracula#palette.black
 let s:red       = g:dracula#palette.red
+let s:green     = g:dracula#palette.green
 let s:yellow    = g:dracula#palette.yellow
+let s:purple    = g:dracula#palette.purple
+let s:pink      = g:dracula#palette.pink
+let s:cyan      = g:dracula#palette.cyan
+let s:white     = g:dracula#palette.white
+let s:b_black   = g:dracula#palette.b_black
+let s:b_red     = g:dracula#palette.b_red
+let s:b_green   = g:dracula#palette.b_green
+let s:b_yellow  = g:dracula#palette.b_yellow
+let s:b_purple  = g:dracula#palette.b_purple
+let s:b_pink    = g:dracula#palette.b_pink
+let s:b_cyan    = g:dracula#palette.b_cyan
+let s:b_white   = g:dracula#palette.b_white
 
 let s:none      = ['NONE', 'NONE']
 
