@@ -1,25 +1,37 @@
 " Palette: {{{
 
 let g:dracula#palette           = {}
-let g:dracula#palette.fg        = ['#F8F8F2', 253]
+let g:dracula#palette.fg        = ['#F8F8F2',  7]
+let g:dracula#palette.bg        = ['#21222C',  0]
 
-let g:dracula#palette.bglighter = ['#424450', 238]
-let g:dracula#palette.bglight   = ['#343746', 237]
-let g:dracula#palette.bg        = ['#282A36', 236]
-let g:dracula#palette.bgdark    = ['#21222C', 235]
-let g:dracula#palette.bgdarker  = ['#191A21', 234]
-
+" Some highlight groups depend on these so
+" we can't remove them yet
+let g:dracula#palette.bglighter = ['#282A36', 236]
+let g:dracula#palette.bglight   = ['#282A36', 236]
+let g:dracula#palette.bgdark    = ['#282A36', 236]
+let g:dracula#palette.bgdarker  = ['#282A36', 236]
 let g:dracula#palette.comment   = ['#F1FA8C',  61]
 let g:dracula#palette.selection = ['#44475A', 239]
 let g:dracula#palette.subtle    = ['#424450', 238]
-
-let g:dracula#palette.cyan      = ['#8BE9FD', 117]
-let g:dracula#palette.green     = ['#50FA7B',  84]
 let g:dracula#palette.orange    = ['#FFB86C', 215]
-let g:dracula#palette.pink      = ['#FF79C6', 212]
-let g:dracula#palette.purple    = ['#BD93F9', 141]
-let g:dracula#palette.red       = ['#FF5555', 203]
-let g:dracula#palette.yellow    = ['#F1FA8C', 228]
+
+" ANSI colors
+let g:dracula#palette.black     = ['#21222C',   0]
+let g:dracula#palette.red       = ['#FF5555',   1]
+let g:dracula#palette.green     = ['#50FA7B',   2]
+let g:dracula#palette.yellow    = ['#F1FA8C',   3]
+let g:dracula#palette.purple    = ['#BD93F9',   4]
+let g:dracula#palette.pink      = ['#FF79C6',   5]
+let g:dracula#palette.cyan      = ['#8BE9FD',   6]
+let g:dracula#palette.white     = ['#F8F8F2',   7]
+let g:dracula#palette.b_black   = ['#6272A4',   8]
+let g:dracula#palette.b_red     = ['#FF6E6E',   9]
+let g:dracula#palette.b_green   = ['#69FF94',  10]
+let g:dracula#palette.b_yellow  = ['#FFFFA5',  11]
+let g:dracula#palette.b_purple  = ['#D6ACFF',  12]
+let g:dracula#palette.b_pink    = ['#FF92DF',  13]
+let g:dracula#palette.b_cyan    = ['#A4FFFF',  14]
+let g:dracula#palette.b_white   = ['#FFFFFF',  15]
 
 "
 " ANSI

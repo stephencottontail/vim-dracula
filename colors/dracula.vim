@@ -94,7 +94,7 @@ if !exists('g:dracula_inverse')
 endif
 
 if !exists('g:dracula_colorterm')
-  let g:dracula_colorterm = 1
+  let g:dracula_colorterm = 0
 endif
 
 "}}}2
